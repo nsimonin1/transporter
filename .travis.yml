@@ -6,3 +6,8 @@ before_install:
   - chmod +x mvnw
 after_success: 
   - bash <(curl -s https://codecov.io/bash) -t 7d71f0ad-b4ca-44e4-84cb-ffbe17904429
+  
+cache:
+  directories: 
+    - .autoconf
+    - $HOME/.m2
