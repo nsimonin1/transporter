@@ -19,6 +19,8 @@
 		<java.version>1.8</java.version>
 		<jacoco.version>0.8.2</jacoco.version>
 		<fontend.version>1.7.5</fontend.version>
+		<node.version>v10.15.3</node.version>
+		<npm.version>6.9.0</npm.version>
 	</properties>
 
 	<dependencies>
@@ -101,8 +103,8 @@
 							<goal>install-node-and-npm</goal>
 						</goals>
 						<configuration>
-							<nodeVersion>v10.15.3</nodeVersion>
-							<npmVersion>6.9.0</npmVersion>
+							<nodeVersion>${node.version}</nodeVersion>
+							<npmVersion>${npm.version}</npmVersion>
 						</configuration>
 					</execution>
 					<execution>
@@ -120,7 +122,7 @@
 						</goals>
 						<phase>prepare-package</phase>
 						<configuration>
-							<arguments>build</arguments>
+							<arguments>run build</arguments>
 						</configuration>
 					</execution>
 					<!--execution> <id>test</id> <goals> <goal>npm</goal> </goals> <phase>test</phase> 
@@ -138,7 +140,7 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${basedir}/target/classes/public</outputDirectory>
+							<outputDirectory>${basedir}/target/classes/static</outputDirectory>
 							<resources>
 								<resource>
 									<directory>${basedir}/target/www</directory>
