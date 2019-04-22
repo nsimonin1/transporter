@@ -17,7 +17,7 @@ public class HelloResource {
 	 *
 	 * @return
 	 */
-	@GetMapping("/")
+	@GetMapping("/api")
 	public String hello() {
 		return "My First app";
 	}
