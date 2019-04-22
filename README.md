@@ -7,3 +7,5 @@
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=org.transport%3Atransport&metric=alert_status)](https://sonarcloud.io/dashboard?id=org.transport%3Atransport)
 
+Build only api code
+mvn clean package -Dskip.npm
