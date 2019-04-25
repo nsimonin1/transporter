@@ -17,18 +17,18 @@ cache:
 addons:
   sonarcloud:
     organization: nsimonin1-github
-    token: cb5a880812481610d106e067f344030e22c3d9ef
+    token: $SONAR_QUBE
 script:
   - ./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
-#deploy:
-#  provider: cloudfoundry
-#  username: nsimonin1@gmail.com
-#  password: supersecretpassword
-#  api: https://api.run.pivotal.io
-#  organization: myawesomeorganization
-#  space: staging
-#  manifest: manifest-staging.yml       # (optional)  Defaults to manifest.yml.
-#  app_name: My app name                # (optional)
+deploy:
+  provider: cloudfoundry
+  username: nsimonin1@gmail.com
+  password: $PIVOTAL_CLOUD
+  api: https://api.run.pivotal.io
+  organization: ngos-project
+  space: staging
+  #manifest: manifest-staging.yml       # (optional)  Defaults to manifest.yml.
+  app_name: transport                # (optional)
   
   
   
