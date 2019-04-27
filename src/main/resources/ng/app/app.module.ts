@@ -9,7 +9,7 @@ import { NavbarComponent } from './common/navbar/navbar.component';
 import { UtilisateursComponent } from './utilisateurs/utilisateurs.component';
 import { UtilisateurComponent } from './utilisateur/utilisateur.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { HomePageComponent } from './home-page/home-page.component'; 
+import { HomePageComponent } from './home-page/home-page.component';
 
 
 const appRoutes: Routes = [
@@ -31,7 +31,7 @@ const appRoutes: Routes = [
     PageNotFoundComponent,
     HomePageComponent
   ],
-  imports: [ 
+  imports: [
     BrowserModule,
     AppBoostrapModule,
     RouterModule.forRoot(appRoutes,
