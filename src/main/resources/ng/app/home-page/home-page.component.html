@@ -196,14 +196,15 @@
         <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
         <button type="button" class="btn btn-primary" tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
             Button with tooltip
-            </button>
+        </button>
           
             <button type="button" class="btn btn-info" (click)="openModal(template)">Create template modal</button>
           
             <ng-template #template>
                 <div class="modal-header">
                     <h4 class="modal-title pull-left">Modal</h4>
-                    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                    <button type="button" class="close pull-right" aria-label="Close"
+                     (click)="modalService.dismissAll()"> 
                  <span aria-hidden="true">&times;</span>
                </button>
                 </div>
