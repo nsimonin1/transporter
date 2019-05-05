@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomePageRoutingModule } from './home-page-routing.module';
-import { HomePageComponent } from './home-page.component';
-import { NavbarComponent } from '../common/navbar/navbar.component';
+import { HomePageComponent } from './home-page.component'; 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   providers: [],
-  declarations: [HomePageComponent, NavbarComponent],
+  declarations: [HomePageComponent],
   imports: [
     CommonModule,
     NgbModule,
