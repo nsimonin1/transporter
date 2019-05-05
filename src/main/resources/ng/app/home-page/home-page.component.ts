@@ -1,4 +1,4 @@
-import { Component, OnInit, TemplateRef } from '@angular/core'; 
+import { Component, OnInit, TemplateRef } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -6,14 +6,14 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.css']
 })
-export class HomePageComponent implements OnInit { 
+export class HomePageComponent implements OnInit {
 
   constructor(public modalService: NgbModal) { }
 
   ngOnInit() {
   }
 
-  public openModal(template) { 
+  public openModal(template) {
    this.modalService.open(template);
   }
 
