@@ -1,0 +1,5 @@
+applications:
+- name: transport
+  memory: 1024M
+  routes:
+  - route: transport.cfapps.io
