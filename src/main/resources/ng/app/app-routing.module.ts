@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import { BsModalService,BsModalRef } from 'ngx-bootstrap/modal'; 
-import { NavbarComponent } from './common/navbar/navbar.component';
- 
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+
 
 
 const appRoutes: Routes = [
@@ -12,7 +11,7 @@ const appRoutes: Routes = [
 ];
 
 
-@NgModule({  
+@NgModule({
   providers: [BsModalService, BsModalRef],
   imports: [
     RouterModule.forRoot(appRoutes,
