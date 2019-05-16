@@ -30,7 +30,7 @@ deploy:
   #manifest: manifest-staging.yml       # (optional)  Defaults to manifest.yml.
   app_name: courier-interim                # (optional)
   on:
-    branch: master
+    branch: master1
   
   
   
