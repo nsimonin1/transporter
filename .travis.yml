@@ -21,16 +21,18 @@ addons:
 script:
   - ./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
 deploy:
-  provider: cloudfoundry
-  username: nsimonin1@gmail.com
-  password: $PIVOTAL_CLOUD
-  api: https://api.run.pivotal.io
-  organization: ngos-project
-  space: development
+  provider: heroku
+  api_key: $HEROKU_API
+  app: transport-inter
+  #username: nsimonin1@gmail.com
+  #password: $PIVOTAL_CLOUD
+  #api: https://api.run.pivotal.io
+  #organization: ngos-project
+  #space: development
   #manifest: manifest-staging.yml       # (optional)  Defaults to manifest.yml.
-  app_name: courier-interim                # (optional)
+  #app_name: courier-interim                # (optional)
   on:
-    branch: master1
+    branch: master
   
   
   
