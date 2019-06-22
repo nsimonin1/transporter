@@ -9,4 +9,4 @@
 Build only api code
 mvn clean package -Dskip.npm
 
-[Result here](https://transport-inter.herokuapp.com/index)
+[Result here](https://transport-inter.herokuapp.com/index.html)
