@@ -34,7 +34,7 @@ export class NavbarComponent implements OnInit {
     }
 }
 
-  toggleCollapsed(){
+  toggleCollapsed() {
     this.collapsed = ! this.collapsed;
     this.collapsedEvent.emit(this.collapsed);
   }
